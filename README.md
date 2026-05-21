@@ -132,33 +132,4 @@ Thông thường, khi đọc hết câu A, người nghe sẽ phải đợi 1-2 
 
 ---
 
-## 🚀 Hướng Dẫn Đóng Gói & Deploy Lên Netlify
-
-Để chuẩn bị đưa trang web này lên chạy công khai trên **Netlify**, bạn thực hiện theo các bước tối ưu sau đây:
-
-### ⚠️ Lưu ý Cực Kỳ Quan Trọng về Netlify:
-*   Netlify là môi trường **Serverless** tĩnh. Điều này đồng nghĩa với việc Server Express (`server.ts`) sẽ **không hoạt động** trên Netlify.
-*   **Hệ quả:** Tính năng Edge-TTS (cần Server API `/api/tts`) sẽ không hoạt động trên Netlify trừ khi bạn cấu hình sang *Netlify Functions*. 
-*   **Tuy nhiên:** Động cơ **NghiTTS chạy hoàn toàn Client-Side** sẽ hoạt động vô cùng xuất sắc và mượt mà mà không gặp bất kỳ giới hạn nào!
-
-### Các Bước Thực Hiện Deploy Thủ Công (Drag & Drop):
-
-1.  **Tiến hành Build tối ưu hóa ứng dụng:**
-    Chạy lệnh đóng gói sản phẩm của Vite tại thư mục gốc:
-    ```bash
-    npm run build
-    ```
-2.  **Nhận kết quả:**
-    Sau khi chạy xong, Vite sẽ tạo ra một thư mục sạch sẽ tên là **`dist`** chứa toàn bộ các file tĩnh đã được nén và tối ưu dung lượng cực nhỏ.
-3.  **Tải lên Netlify:**
-    *   Đăng nhập vào tài khoản Netlify của bạn.
-    *   Kéo thả trực tiếp duy nhất thư mục **`dist`** này vào khu vực Deploy của Netlify.
-    *   Trang web của bạn sẽ hoạt động công khai chỉ sau vài giây!
-
-### Hướng Dẫn Push Lên Github để Tự Động Build:
-Nếu bạn liên kết Github với Netlify để tự động cập nhật web mỗi khi đẩy code mới, hãy lưu ý **không được bỏ** file sau:
-*   **`phonemizer-1.2.2.tgz`**: Đây là gói thư viện cài đặt offline cục bộ được khai báo trong `package.json`. File này **bắt buộc** phải tồn tại song song với `package.json` khi đẩy lên Github để trình quản lý Netlify có thể tìm thấy dữ liệu và cài đặt thành công.
-
----
-
 Chúc bạn có những trải nghiệm đọc và nghe truyện tuyệt vời nhất cùng với **Thư Viện Truyện V3**! 🚀
