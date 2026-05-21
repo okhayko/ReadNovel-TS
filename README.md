@@ -107,7 +107,7 @@ Thông thường, khi đọc hết câu A, người nghe sẽ phải đợi 1-2 
 
 1.  **Tải mã nguồn về máy:**
     ```bash
-    git clone [<url-repository-cua-ban>](https://github.com/okhayko/ReadNovel-TS)
+    git clone https://github.com/okhayko/ReadNovel-TS
     cd ReadNovel-TS
     ```
 
