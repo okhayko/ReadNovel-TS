@@ -107,8 +107,8 @@ Thông thường, khi đọc hết câu A, người nghe sẽ phải đợi 1-2 
 
 1.  **Tải mã nguồn về máy:**
     ```bash
-    git clone <url-repository-cua-ban>
-    cd <ten-thu-muc-du-an>
+    git clone [<url-repository-cua-ban>](https://github.com/okhayko/ReadNovel-TS)
+    cd ReadNovel-TS
     ```
 
 2.  **Cài đặt các thư viện cần thiết:**
